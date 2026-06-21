@@ -2,7 +2,7 @@
 
 ## AI-Assisted Organizational Threat Triage Platform
 
-SentinelX is a responsible AI-assisted threat triage platform designed for NGOs, intervention organizations, investigators, and institutional safety teams supporting vulnerable individuals facing:
+SentinelX is a responsible AI-assisted organizational threat triage platform designed for NGOs, intervention organizations, investigators, and institutional safety teams supporting vulnerable individuals facing:
 
 * stalking,
 * coercion,
@@ -91,25 +91,13 @@ Human analysts remain responsible for:
 
 ---
 
-# System Architecture
-
-The platform consists of three distinct flows:
-
-| Flow                 | AI Used     | Purpose                                 |
-| -------------------- | ----------- | --------------------------------------- |
-| SOS                  | No AI       | Immediate emergency escalation          |
-| Detect Threat        | Bi-LSTM NLP | Contextual spoken threat classification |
-| Safe Chat + Evidence | Gemini API  | Structured contextual evidence analysis |
-
----
-
 # Technology Stack
 
-## Mobile App
+## Mobile Application
 
 * React Native Expo
 
-## Frontend Dashboard
+## NGO Dashboard
 
 * React
 
@@ -135,6 +123,7 @@ The platform consists of three distinct flows:
 
 ---
 
+# Repository Structure
 
 ```bash
 SentinelX
@@ -192,7 +181,123 @@ SentinelX
     └── Team_Roles.pdf
 ```
 
+---
+
+# Important Files for Reviewers
+
+## Start Here
+
+Reviewers should begin with:
+
+```bash
+Guide.pdf
 ```
+
+This document contains:
+
+* complete prototype navigation instructions,
+* reviewer walkthrough,
+* dashboard testing steps,
+* and AI workflow explanation.
+
+---
+
+# Pitch Materials
+
+Located in:
+
+```bash
+Pitch_Deck/
+```
+
+Contains:
+
+* final presentation deck,
+* architecture diagram,
+* and system workflow visuals.
+
+---
+
+# Demo Files
+
+Located in:
+
+```bash
+Demo/
+```
+
+Contains:
+
+* demo video,
+* demo narration script,
+* and supporting screenshots.
+
+---
+
+# Documentation Files
+
+Located in:
+
+```bash
+Documentation/
+```
+
+Contains:
+
+* About the Project,
+* AI Architecture Explanation,
+* Responsible AI Guardrails,
+* Human-in-the-Loop Design,
+* Technical Stack,
+* and Data Sources.
+
+---
+
+# Prototype Files
+
+Located in:
+
+```bash
+Prototype/
+```
+
+Contains:
+
+* Android APK,
+* mobile UI screenshots,
+* and dashboard screenshots.
+
+---
+
+# Source Summary
+
+Located in:
+
+```bash
+Source_Summary/
+```
+
+Contains:
+
+* codebase overview,
+* API workflow explanations,
+* and architecture breakdowns.
+
+---
+
+# Team Information
+
+Located in:
+
+```bash
+Team/
+```
+
+Contains:
+
+* team photograph,
+* team member information,
+* and project role breakdowns.
 
 ---
 
@@ -209,19 +314,9 @@ Ensure the following are installed:
 
 ---
 
-# 1. Clone Repository
+# Backend Setup
 
-```bash
-git clone https://github.com/your-username/SentinelX.git
-
-cd SentinelX
-```
-
----
-
-# 2. Backend Setup
-
-Navigate to backend folder:
+Navigate to backend directory:
 
 ```bash
 cd backend
@@ -241,9 +336,9 @@ python app.py
 
 ---
 
-# 3. Mobile App Setup
+# Mobile App Setup
 
-Navigate to mobile app folder:
+Navigate to mobile application:
 
 ```bash
 cd mobile-app
@@ -255,7 +350,7 @@ Install dependencies:
 npm install
 ```
 
-Start Expo development server:
+Start Expo:
 
 ```bash
 npx expo start
@@ -263,9 +358,9 @@ npx expo start
 
 ---
 
-# 4. Dashboard Setup
+# Dashboard Setup
 
-Navigate to dashboard folder:
+Navigate to dashboard:
 
 ```bash
 cd dashboard
@@ -277,7 +372,7 @@ Install dependencies:
 npm install
 ```
 
-Start dashboard:
+Run dashboard:
 
 ```bash
 npm run dev
@@ -289,20 +384,28 @@ npm run dev
 
 # Example 1 — SOS Flow
 
-### Trigger Emergency Alert
+## Purpose
+
+Immediate emergency escalation.
+
+## How to Use
 
 1. Open mobile app
 2. Press and hold SOS button for 3 seconds
-3. Alert is routed to:
+3. Alert routes instantly to:
 
    * NGO Dashboard
-   * Emergency Contacts
+   * emergency contacts
 
 ---
 
 # Example 2 — Detect Threat
 
-### Activate Threat Detection
+## Purpose
+
+On-device spoken threat classification.
+
+## How to Use
 
 1. Toggle:
 
@@ -312,20 +415,21 @@ Detect Threat = ON
 
 2. The app:
 
-* captures audio locally,
-* transcribes speech,
-* classifies text using Bi-LSTM,
+* transcribes speech locally,
+* classifies contextual threats,
 * discards audio immediately.
 
-3. If threat detected:
-
-* alert appears on dashboard.
+3. Threat signals appear on NGO dashboard.
 
 ---
 
-# Example 3 — Safe Chat Submission
+# Example 3 — Safe Chat
 
-### Submit Structured Report
+## Purpose
+
+Structured contextual reporting.
+
+## How to Use
 
 Users complete:
 
@@ -337,14 +441,16 @@ Users complete:
 Optional:
 
 * image upload,
-* audio upload,
-* video upload.
+* video upload,
+* audio upload.
 
-Reports arrive on dashboard as:
+Submitted reports appear as:
 
 ```bash
 Pending Analysis
 ```
+
+until reviewed by an analyst.
 
 ---
 
@@ -354,14 +460,14 @@ This section provides a step-by-step walkthrough for reviewers testing the Senti
 
 ---
 
-# Mobile App Sign Up
+# Mobile App SIGN UP
 
 ## Step 1
 
 Download the APK located in:
 
 ```bash
-prototype/Android_APK/
+Prototype/Android_APK/
 ```
 
 Install on Android device.
@@ -370,13 +476,13 @@ Install on Android device.
 
 ## Step 2
 
-Open SentinelX.
+Open the mobile application.
 
 ---
 
 ## Step 3
 
-Allow notification permissions (optional).
+Allow SentinelX notification permissions (optional).
 
 ---
 
@@ -384,21 +490,21 @@ Allow notification permissions (optional).
 
 Click:
 
-```bash
-Continue with Phone Number
-```
+> Continue with Phone Number
 
 ---
 
 ## Step 5
 
-Enter phone number.
+Enter phone number and click:
+
+> Send Code
 
 ---
 
 ## Step 6
 
-Use hardcoded OTP:
+For this MVP prototype, use hardcoded OTP:
 
 ```bash
 2026
@@ -414,12 +520,26 @@ Allow location access.
 
 ## Step 8
 
-Complete setup:
+Fill in:
 
 * First Name
 * Last Name
 * Email
-* Emergency Contact
+
+---
+
+## Step 9
+
+Add at least one emergency contact.
+
+---
+
+## Important Note
+
+If the app gets stuck during onboarding:
+
+* restart the app,
+* and complete setup more quickly.
 
 ---
 
@@ -431,25 +551,28 @@ Dashboard URL:
 https://besafe-server-production.up.railway.app
 ```
 
-Use any NGO analyst credentials.
+Login or sign up using NGO analyst credentials.
 
 ---
 
-# Dashboard Features
+# Important Dashboard Note
 
-After login reviewers will see:
+Ensure your current location is enabled.
+
+---
+
+# After Login Reviewers Will See
 
 * Overview Page
 * Alert Queue
-* Reports Queue
+* Safe Chat Reports
 * AI Analysis Controls
-* Explainable AI Panels
 
 ---
 
 # Mobile App Walkthrough
 
-The mobile app contains three flows:
+The mobile application contains three major flows:
 
 1. SOS
 2. Detect Threat
@@ -457,81 +580,217 @@ The mobile app contains three flows:
 
 ---
 
-# A. SOS Flow
+# A. SOS Flow (No AI)
 
 ## Purpose
 
-Immediate emergency escalation.
+Immediate emergency escalation without AI involvement.
 
 ## Steps
 
-1. Hold SOS button for 3 seconds
-2. Alert routed instantly
-3. Observe dashboard alert
+### Step 1
+
+Press and hold the SOS button for approximately 3 seconds.
+
+### Step 2
+
+The system sends:
+
+* emergency alerts,
+* dashboard notifications,
+* contextual emergency information.
+
+### Step 3
+
+Open the NGO dashboard and observe:
+
+* incoming SOS alert,
+* timestamp,
+* priority indicator,
+* and user information.
 
 ---
 
-# B. Detect Threat Flow
+# Important Design Note
+
+The SOS flow intentionally uses:
+
+> NO AI
+
+This preserves direct human-controlled escalation.
+
+---
+
+# B. Detect Threat Flow (On-Device AI)
 
 ## Purpose
 
-On-device contextual threat classification.
-
-## Steps
-
-1. Toggle Detect Threat ON
-2. Local transcription begins
-3. Bi-LSTM classifies text
-4. Threat signals appear on dashboard
+Contextual spoken threat classification using NLP.
 
 ---
 
-# C. Safe Chat Flow
+## Steps
+
+### Step 1
+
+Return to Home Screen.
+
+### Step 2
+
+Toggle:
+
+> Detect Threat
+
+to ON.
+
+### Step 3
+
+The app begins:
+
+* local audio capture,
+* local transcription,
+* on-device Bi-LSTM classification.
+
+### Step 4
+
+If a threat is detected:
+
+* a threat signal is routed to dashboard.
+
+### Step 5
+
+Open dashboard and observe:
+
+* threat alert entry,
+* transcript snippet,
+* classification result.
+
+---
+
+# Important Privacy Design
+
+Audio is:
+
+* never stored,
+* never uploaded,
+* and discarded immediately after transcription.
+
+Only the classification result leaves the device.
+
+---
+
+# C. Safe Chat + Evidence Flow
 
 ## Purpose
 
 Structured contextual abuse reporting.
 
+---
+
 ## Steps
 
-1. Open Safe Chat
-2. Select category
-3. Enter narrative
-4. Select timing
-5. Select frequency
-6. Upload evidence
-7. Submit report
+### Step 1
+
+Open:
+
+> Safe Chat
+
+from Home Screen.
+
+### Step 2 — Category Selection
+
+Select:
+
+* stalking,
+* cyber-harassment,
+* coercion,
+* exploitation,
+* physical tracking.
+
+### Step 3 — Narrative Description
+
+Enter contextual description.
+
+### Step 4 — Timing
+
+Select:
+
+* today,
+* this week,
+* months ago.
+
+### Step 5 — Frequency
+
+Select:
+
+* first time,
+* a few times,
+* repeated escalation.
+
+### Step 6 — Evidence Upload
+
+Optional uploads:
+
+* image,
+* video,
+* audio.
+
+### Step 7 — Submit Report
+
+Report appears on dashboard as:
+
+```bash
+Pending Analysis
+```
 
 ---
 
 # NGO Dashboard Walkthrough
 
+The dashboard serves as the primary analyst workspace.
+
+It contains:
+
+* real-time alerts,
+* Safe Chat reports,
+* Explainable AI panels,
+* AI analysis controls,
+* and analyst workflows.
+
 ---
 
-# A. View Alerts
+# A. Viewing Incoming Alerts
 
 Navigate to:
 
-```bash
-Alerts
-```
+> Alerts
 
 Analysts can review:
 
-* SOS alerts
-* Detect Threat alerts
-* timestamps
-* contextual information
+* SOS alerts,
+* Detect Threat signals,
+* timestamps,
+* contextual information,
+* priority indicators.
+
+Clicking an alert opens:
+
+> Detail Panel
+
+which displays:
+
+* transcript snippets,
+* timestamps,
+* contextual details,
+* analyst controls.
 
 ---
 
-# B. Review Safe Chat Reports
+# B. Reviewing Safe Chat Reports
 
 Navigate to:
 
-```bash
-Reports
-```
+> Reports
 
 Reports initially appear as:
 
@@ -539,38 +798,111 @@ Reports initially appear as:
 Pending Analysis
 ```
 
-No AI processing occurs automatically.
+At this stage:
+
+* no AI analysis has occurred,
+* no synthesis has been generated.
+
+This is intentional.
 
 ---
 
 # C. Human-Triggered AI Analysis
 
-## Important Workflow
+## Important Responsible AI Workflow
 
 AI analysis only begins after explicit analyst authorization.
 
-### Steps
+---
 
-1. Open report
-2. Click:
+## Steps
+
+### Step 1
+
+Open Safe Chat report.
+
+### Step 2
+
+Click:
 
 ```bash
 [Analyze Report]
 ```
 
-3. Flask backend:
+### Step 3
+
+The backend:
 
 * retrieves report,
+* processes metadata,
 * sends contextual payload,
-* receives explainable synthesis output.
+* receives explainable synthesis.
 
-4. Report status updates to:
+### Step 4
+
+Status updates from:
+
+```bash
+Pending Analysis
+```
+
+to:
 
 ```bash
 Triaged
 ```
 
-5. Explainable AI panel appears.
+### Step 5
+
+Explainable AI panel becomes visible.
+
+The panel displays:
+
+* contextual synthesis,
+* escalation observations,
+* explainable reasoning,
+* risk indicators.
+
+---
+
+# D. Human-in-the-Loop Workflow
+
+SentinelX intentionally prevents autonomous intervention.
+
+Reviewers should note:
+
+* AI never contacts authorities,
+* AI never escalates automatically,
+* AI never performs enforcement actions.
+
+Human analysts remain responsible for:
+
+* interpreting outputs,
+* validating contextual findings,
+* making intervention decisions.
+
+---
+
+# Recommended Reviewer Flow
+
+For best demonstration experience:
+
+1. Mobile App Home Screen
+2. SOS Flow
+3. Detect Threat Flow
+4. Safe Chat Submission
+5. NGO Dashboard Alert Queue
+6. Safe Chat Report Queue
+7. Analyze Report Trigger
+8. Explainable AI Panel
+9. Analyst Action Controls
+
+This demonstrates:
+
+* multi-signal ingestion,
+* contextual NLP,
+* Explainable AI,
+* human-supervised AI governance.
 
 ---
 
@@ -581,31 +913,41 @@ SentinelX was intentionally designed to reduce:
 * automation bias,
 * privacy violations,
 * over-reliance on AI,
-* and autonomous escalation risks.
+* autonomous escalation risks.
 
-## Key Safeguards
+---
+
+# Core Safeguards
 
 * Human-triggered AI only
 * No autonomous intervention
 * Explainable AI synthesis
 * On-device transcription
 * Audio deletion after transcription
-* Transparent analyst review workflows
+* Transparent analyst review workflow
 
 ---
 
 # Contributing Guidelines
 
-We welcome contributions from developers, researchers, and safety-focused organizations.
+We welcome contributions from:
 
-## Contribution Areas
+* developers,
+* researchers,
+* NGOs,
+* responsible AI practitioners,
+* and safety-focused organizations.
+
+---
+
+# Contribution Areas
 
 * NLP improvements
-* Dashboard enhancements
-* UI/UX improvements
+* UI/UX enhancements
+* Dashboard improvements
 * Security hardening
-* Responsible AI tooling
-* Accessibility improvements
+* Explainable AI tooling
+* Accessibility support
 
 ---
 
@@ -613,7 +955,7 @@ We welcome contributions from developers, researchers, and safety-focused organi
 
 ## Step 1
 
-Fork the repository.
+Fork repository.
 
 ---
 
@@ -653,25 +995,6 @@ Open Pull Request.
 
 ---
 
-# Important Research Notes
-
-SentinelX is currently an MVP / pilot-stage prototype created during the USAII Hackathon.
-
-The platform is intended for:
-
-* research,
-* prototyping,
-* organizational testing,
-* and responsible AI experimentation.
-
-The system should not be treated as a replacement for:
-
-* law enforcement,
-* emergency response teams,
-* or professional crisis intervention services.
-
----
-
 # AI Tools Used
 
 ## AI Models
@@ -688,19 +1011,19 @@ The system should not be treated as a replacement for:
 
 * ChatGPT
 * GitHub Copilot
-* Gemini
 * Claude
+* Gemini
 * Lovable
 
 ---
 
 # Dataset Information
 
-The NLP model was trained on:
+The NLP model was trained using:
 
 * public NLP datasets,
-* contextual threat statements,
-* and synthetic escalation narratives.
+* contextual threat examples,
+* synthetic escalation narratives.
 
 Dataset size:
 
@@ -708,7 +1031,7 @@ Dataset size:
 100,000+ labeled entries
 ```
 
-Split:
+Dataset split:
 
 ```bash
 70% Training
@@ -738,10 +1061,29 @@ UI/UX Designer
 
 ---
 
+# Important Research Note
+
+SentinelX is currently an MVP / pilot-stage prototype created during the USAII Hackathon.
+
+The system is intended for:
+
+* research,
+* prototyping,
+* organizational testing,
+* and responsible AI experimentation.
+
+It should not replace:
+
+* law enforcement,
+* emergency response systems,
+* or professional crisis intervention services.
+
+---
+
 # License
 
-This project is currently released for:
+This repository is currently released for:
 
 * educational,
-* hackathon,
-* and research purposes only.
+* research,
+* and hackathon demonstration purposes only.
