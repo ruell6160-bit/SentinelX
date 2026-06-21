@@ -405,7 +405,7 @@ This section provides a step-by-step walkthrough for reviewers testing the Senti
 Download the APK located in:
 
 ```bash
-Prototype/Android_APK/
+SENTINEL_APK_LINK_TO_DOWNLOAD: https://drive.google.com/file/d/10m8aaiExI5jMwt9q6okJctM0zSe1Ljz7/view?usp=sharing
 ```
 
 Install on Android device.
@@ -1019,6 +1019,13 @@ It should not replace:
 * law enforcement,
 * emergency response systems,
 * or professional crisis intervention services.
+
+---
+
+# LINKS:
+
+SENTINEL_APK_LINK_TO_DOWNLOAD: https://drive.google.com/file/d/10m8aaiExI5jMwt9q6okJctM0zSe1Ljz7/view?usp=sharing
+VIDEO_DEMO: https://drive.google.com/file/d/1KMJSVDuiOTay6qnmAlYNHW5dAwiTUiX_/view?usp=drive_link
 
 ---
 
