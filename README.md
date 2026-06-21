@@ -405,7 +405,7 @@ This section provides a step-by-step walkthrough for reviewers testing the Senti
 Download the APK located in:
 
 ```bash
-SENTINEL_APK_LINK_TO_DOWNLOAD: https://drive.google.com/file/d/10m8aaiExI5jMwt9q6okJctM0zSe1Ljz7/view?usp=sharing
+ https://drive.google.com/file/d/10m8aaiExI5jMwt9q6okJctM0zSe1Ljz7/view?usp=sharing
 ```
 
 Install on Android device.
