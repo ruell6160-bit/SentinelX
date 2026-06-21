@@ -136,6 +136,8 @@ The platform consists of three distinct flows:
 ---
 
 
+```bash
+SentinelX
 │
 ├── Guide.pdf
 │
@@ -188,6 +190,8 @@ The platform consists of three distinct flows:
     ├── Team_Photo.jpg
     ├── Team_Members.pdf
     └── Team_Roles.pdf
+```
+
 ```
 
 ---
