@@ -228,7 +228,7 @@ Demo/
 
 Contains:
 
-* demo video: https://drive.google.com/file/d/1KMJSVDuiOTay6qnmAlYNHW5dAwiTUiX_/view?usp=drive_link
+* demo video: https://youtu.be/ZGMigidNDqo
 * demo narration script,
 * and supporting screenshots.
 
