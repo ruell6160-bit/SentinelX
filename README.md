@@ -135,34 +135,59 @@ The platform consists of three distinct flows:
 
 ---
 
-# Repository Structure
 
-```bash
-SentinelX/
 │
-├── mobile-app/                 # React Native Expo application
+├── Guide.pdf
 │
-├── dashboard/                  # NGO Analyst Dashboard
+├── Pitch_Deck/
+│   ├── SentinelX_Pitch_Deck.pdf
+│   └── SentinelX_Architecture_Diagram.png
 │
-├── backend/                    # Flask backend server
+├── Demo/
+│   ├── SentinelX_Demo_Video.mp4
+│   ├── Demo_Script.pdf
+│   └── Demo_Screenshots/
+│       ├── mobile_safechat.png
+│       ├── analyst_dashboard.png
+│       ├── analyze_report_flow.png
+│       ├── xai_panel.png
+│       └── threat_alert_queue.png
 │
-├── ml-model/                   # Bi-LSTM NLP model
+├── Documentation/
+│   ├── About_The_Project.pdf
+│   ├── AI_Architecture_Explanation.pdf
+│   ├── Responsible_AI_Guardrails.pdf
+│   ├── Human_in_the_Loop_Design.pdf
+│   ├── Technical_Stack.pdf
+│   └── Data_Sources.pdf
 │
-├── prototype/
-│   ├── Android_APK/            # APK build for testing
-│   ├── Demo_Video/             # Hackathon demo video
-│   ├── Architecture/           # Architecture diagrams
-│   └── Screenshots/            # UI screenshots
+├── Prototype/
+│   ├── Android_APK/
+│   │   └── SentinelX.apk
+│   │
+│   ├── Dashboard_Screens/
+│   │   ├── dashboard_home.png
+│   │   ├── pending_analysis.png
+│   │   ├── xai_report_panel.png
+│   │   └── triaged_case.png
+│   │
+│   └── Mobile_App_Screens/
+│       ├── safechat_step1.png
+│       ├── safechat_step2.png
+│       ├── safechat_step3.png
+│       ├── safechat_step4.png
+│       ├── sos_screen.png
+│       └── detect_threat.png
 │
-├── datasets/                   # NLP datasets & synthetic examples
+├── Source_Summary/
+│   ├── Folder_Structure.png
+│   ├── Key_Code_Explanation.pdf
+│   └── API_Workflow_Explanation.pdf
 │
-├── docs/
-│   ├── AI_Architecture.md
-│   ├── Responsible_AI.md
-│   ├── Human_In_The_Loop.md
-│   └── Challenge_Submission.md
-│
-└── README.md
+└── Team/
+    ├── Team_Photo.jpg
+    ├── Team_Members.pdf
+    └── Team_Roles.pdf
 ```
 
 ---
