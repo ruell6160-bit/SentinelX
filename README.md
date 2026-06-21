@@ -305,7 +305,7 @@ Contains:
 
 Navigate to 
 ```bash
-[Prototype/Android_APK](https://drive.google.com/file/d/10m8aaiExI5jMwt9q6okJctM0zSe1Ljz7/view?usp=sharing)
+https://drive.google.com/file/d/10m8aaiExI5jMwt9q6okJctM0zSe1Ljz7/view?usp=sharing
 ```
 Here you can download the SentinelX app for your Android device
 Install the App
