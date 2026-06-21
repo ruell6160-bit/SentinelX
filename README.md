@@ -314,7 +314,7 @@ Install the App
 Navigate to the dashboard via this link:
 
 ```bash
-(https://besafe-server-production.up.railway.app)
+https://besafe-server-production.up.railway.app
 ```
 ---
 
@@ -886,50 +886,6 @@ We welcome contributions from:
 * Security hardening
 * Explainable AI tooling
 * Accessibility support
-
----
-
-# How to Contribute
-
-## Step 1
-
-Fork repository.
-
----
-
-## Step 2
-
-Create feature branch:
-
-```bash
-git checkout -b feature-name
-```
-
----
-
-## Step 3
-
-Commit changes:
-
-```bash
-git commit -m "Added new feature"
-```
-
----
-
-## Step 4
-
-Push branch:
-
-```bash
-git push origin feature-name
-```
-
----
-
-## Step 5
-
-Open Pull Request.
 
 ---
 
