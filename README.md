@@ -89,6 +89,67 @@ Human analysts remain responsible for:
 * prioritization,
 * and intervention decisions.
 
+
+### Multimodal Evidence Synthesis Workflow
+
+For Safe Chat investigations, SentinelX also supports multimodal contextual evidence analysis through Gemini-powered synthesis workflows.
+
+When a vulnerable user submits a Safe Chat report, they may optionally attach supporting evidence such as:
+
+* screenshots,
+* chat exports,
+* voice notes,
+* images,
+* or short videos related to coercion, grooming, cyber-harassment, sextortion, stalking, or exploitation incidents.
+
+Importantly, these uploads are not automatically analyzed upon submission.
+
+The evidence remains in a static:
+
+$$
+\text{Pending Analysis}
+$$
+
+state until an authorized NGO analyst intentionally initiates review from the dashboard interface.
+
+Once the analyst clicks:
+
+[Analyze Report]
+
+the Flask backend retrieves:
+
+$$
+\text{Narrative Description}
++
+\text{Timing Metadata}
++
+\text{Frequency Indicators}
++
+\text{Uploaded Evidence}
+$$
+
+and securely routes the contextual payload into the Gemini multimodal synthesis pipeline.
+
+The AI workflow evaluates:
+
+* contextual behavioral framing,
+* escalation patterns,
+* intimidation progression,
+* grooming indicators,
+* coercive interaction structures,
+* and cross-modal consistency between uploaded evidence and written narratives.
+
+The synthesis engine can also assist analysts in identifying probable communication environments or digital platforms associated with the abuse context by analyzing recurring interface structures, conversational framing, and contextual interaction signals contained within uploaded evidence.
+
+Rather than producing autonomous conclusions, the system generates explainable contextual synthesis outputs designed to help investigators transform fragmented reports into structured investigative intelligence.
+
+The resulting synthesis is returned to the NGO dashboard as an Explainable AI investigative report containing:
+
+* contextual risk observations,
+* behavioral escalation indicators,
+* narrative synthesis summaries,
+* and transparent reasoning outputs for human review.
+
 ---
 
 # Technology Stack
