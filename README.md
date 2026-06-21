@@ -1025,6 +1025,9 @@ It should not replace:
 # LINKS:
 
 SENTINEL_APK_LINK_TO_DOWNLOAD: https://drive.google.com/file/d/10m8aaiExI5jMwt9q6okJctM0zSe1Ljz7/view?usp=sharing
+
+---
+
 VIDEO_DEMO: https://drive.google.com/file/d/1KMJSVDuiOTay6qnmAlYNHW5dAwiTUiX_/view?usp=drive_link
 
 ---
