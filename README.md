@@ -228,7 +228,7 @@ Demo/
 
 Contains:
 
-* demo video,
+* demo video: https://drive.google.com/file/d/1KMJSVDuiOTay6qnmAlYNHW5dAwiTUiX_/view?usp=drive_link
 * demo narration script,
 * and supporting screenshots.
 
@@ -305,7 +305,7 @@ Contains:
 
 Navigate to 
 ```bash
-Prototype/Android_APK
+[Prototype/Android_APK](https://drive.google.com/file/d/10m8aaiExI5jMwt9q6okJctM0zSe1Ljz7/view?usp=sharing)
 ```
 Here you can download the SentinelX app for your Android device
 Install the App
