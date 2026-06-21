@@ -1049,7 +1049,7 @@ Team Lead / System Design / AI Research
 
 ## Tomna
 
-Machine Learning Engineer
+Machine Learning Lead
 
 ## Solomon
 
@@ -1058,6 +1058,10 @@ Mobile Application Developer
 ## Habeeb
 
 UI/UX Designer
+
+## Adebayo
+
+Asst. AI/ML lead
 
 ---
 
