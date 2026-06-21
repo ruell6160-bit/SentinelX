@@ -89,6 +89,7 @@ Human analysts remain responsible for:
 * prioritization,
 * and intervention decisions.
 
+---
 
 ### Multimodal Evidence Synthesis Workflow
 
