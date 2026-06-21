@@ -984,7 +984,7 @@ SENTINEL_APK_LINK_TO_DOWNLOAD: https://drive.google.com/file/d/10m8aaiExI5jMwt9q
 
 ---
 
-VIDEO_DEMO: https://drive.google.com/file/d/1KMJSVDuiOTay6qnmAlYNHW5dAwiTUiX_/view?usp=drive_link
+VIDEO_DEMO: https://youtu.be/ZGMigidNDqo
 
 ---
 
