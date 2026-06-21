@@ -303,81 +303,19 @@ Contains:
 
 # Installation Instructions
 
-## Prerequisites
+Navigate to 
+```bash
+Prototype/Android_APK
+```
+Here you can download the SentinelX app for your Android device
+Install the App
+# NGO DASHBOARD
 
-Ensure the following are installed:
-
-* Node.js
-* Python 3.10+
-* MongoDB
-* Expo CLI
-
----
-
-# Backend Setup
-
-Navigate to backend directory:
+Navigate to the dashboard via this link:
 
 ```bash
-cd backend
+(https://besafe-server-production.up.railway.app)
 ```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run Flask server:
-
-```bash
-python app.py
-```
-
----
-
-# Mobile App Setup
-
-Navigate to mobile application:
-
-```bash
-cd mobile-app
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start Expo:
-
-```bash
-npx expo start
-```
-
----
-
-# Dashboard Setup
-
-Navigate to dashboard:
-
-```bash
-cd dashboard
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run dashboard:
-
-```bash
-npm run dev
-```
-
 ---
 
 # Usage Examples
